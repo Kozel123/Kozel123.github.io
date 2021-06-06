@@ -1,0 +1,222 @@
+@import url(../style/fonts.css);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body, main, .block-tests{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+body{
+	position: absolute;
+	min-width: 100%;
+    height: 100%;
+    background: #f4fcff;
+}
+header{
+	overflow: hidden;
+	width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 0px 2px grey;
+    font-family: Din;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: #8b878738;
+}
+.account-photo{
+	box-shadow: 2px 2px 2px 0px rgb(189 189 189);
+	border-radius: 50%;
+	width: 15vw;
+	height: 15vw;
+	background: white;
+	z-index: 1;
+}
+.account-info{
+    width: 75%;
+    height: 60%;
+    background: white;
+    border-radius: 0 72px 72px 0;
+    position: relative;
+    right: 4vw;
+}
+main{
+	overflow: scroll;
+    width: 97%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.test-block{
+	background-color: white;
+	font-family: RR;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	width: 95%;
+	height :30%;
+	margin:2% 0%; 
+    box-shadow: 3px 3px 6px 0px rgb(189 189 189);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.test-block h2{
+	width: 90%;
+}
+.test-block h4{
+    width: 30%;
+    padding: 2vw 2vw;
+}
+.test-block h2,
+.test-block h4{
+    text-align: center;
+    background: #dde3e5db;
+    border-radius: 72px;
+}
+.line{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #f36630;
+}
+.test-block-active-buttons{
+	width: 90%;
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.like {
+	background-color: #696969;
+ 	display: inline-block;
+  	height: 28px;
+  	margin: 0 8px;
+  	position: relative;
+  	top: 0;
+  	transform: rotate(-45deg);
+  	width: 28px;
+}
+
+.like:before,
+.like:after {
+  	content: "";
+  	background-color: #696969;
+  	border-radius: 50%;
+  	height: 28px;
+  	position: absolute;
+  	width: 28px;
+}
+
+.like:before {
+  	top: -13px;
+  	left: 0;
+}
+
+.like:after {
+  	left: 13px;
+  	top: 0;
+}
+.like-active,
+.like-active:before,
+.like-active:after{
+	transition: 0.4s;
+  	background-color: tomato;
+}
+.play{
+	transition: 0.4s;
+	color: dimgrey;
+    font-size: 7vw;
+}
+.play-active{
+	color: #5ec0e7;
+}
+footer{
+    font-family: Din;
+	width: 100%;
+	height: 10%;
+	background-color: white;
+	display: flex;
+    justify-content: center;
+    box-shadow: 2px 0px 2px grey;
+}
+footer ul{
+	font-size: 6vw;
+	width: 96%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+footer ul li{
+	height: 100%;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+	width: 30%;	
+}
+.burger{
+	opacity: 0;
+	width: 30%;
+    height: 0%;
+    transition: 0.7s;
+    bottom: 10%;
+    background: #dadadaeb;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.burger-p{
+	display: none;
+}
+.burger-p-active{
+	display: block;
+}
+.active-burger{
+	opacity: 1;
+    height: 30%;
+}
+footer ul li{
+	transition: 0.4s ease-in-out;
+}
+.active-button{
+	background-color: #f1f1f3;
+	justify-content: flex-end;
+}
+footer ul li:after{
+	display: block;
+	position: relative;
+	left: 0;
+	width: 0;
+	height: 3.2px;
+	background-color: #5ec0e7;
+	content: "";
+	transition: width 0.3s ease-out;
+	bottom: 0;
+}
+.active-button:hover:after,
+.active-button:hover:focus {
+	width: 100%;
+	color: white;
+	background-color: #5ec0e7;
+	bottom: 0;
+}
+.questions-num-color{
+	color: #03a9f4;
+}
+#modeColor{
+	font-style: italic;
+	color: #68b4d0;
+}
+/*Icons*/

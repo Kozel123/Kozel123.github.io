@@ -1,0 +1,14 @@
+ @font-face {
+    font-family: Din; /* Имя шрифта */
+    src: url(../fonts/4F.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+	font-family: Raleway;
+ 	src: url(../fonts/Raleway.ttf);
+}
+
+@font-face {
+	font-family: RR;
+ 	src: url(../fonts/RR.ttf);
+}
+
