@@ -203,9 +203,17 @@ let burgerPTests = [].slice.call(document.getElementsByClassName('burger-p-tests
 		let murdererOrVictimPassed = localStorage.getItem("murdererOrVictimPassed");
 		if(murdererOrVictimPassed == null){ murdererOrVictimPassed = 0;};
 		localStorage.setItem("murdererOrVictimPassed", murdererOrVictimPassed);
+
+		//<MODEvue>
+
+		let colorMode = localStorage.getItem("colorMode");
+		if(colorMode == null){ colorMode = 0;};
+		localStorage.setItem("colorMode", colorMode);
 	//</LocalStore>
 
-
+	if(localStorage.colorMode == 'darckMode'){
+		darckMode()
+	}
 function buttonsHome() {
   	if(homeBurger.classList.contains("active-burger")){
 		burgerPTests.forEach(e => e.classList.toggle("burger-p-active"));
@@ -286,7 +294,14 @@ lenguageButton.addEventListener('click', function(click){
 modeButton.addEventListener('click', function(click){
 	click.stopPropagation();
 	modeButton.style.background = '#5ec0e7bf';	
-	modeColor.style.color = '#f4fcff';	
+	modeColor.style.color = '#f4fcff';
+	if(localStorage.colorMode == 'darckMode'){
+		localStorage.colorMode = 'Standart';
+		location.reload()
+	}else{
+		localStorage.colorMode = 'darckMode';
+		darckMode()
+	}	
 
 	lenguageButton.children[1].classList.remove('lenguegesOpend');
 	//lenguageButton.classList.remove('lenguage-button-opend-closed');
@@ -307,3 +322,13 @@ accontSign.addEventListener('click', function(click){
 });
 //https://www.youtube.com/watch?v=qZXt1Aom3Cs
 
+function darckMode(){
+	modeColor.textContent = 'Dark';
+
+	document.querySelector("html").style.filter = 'invert(1)';
+	document.querySelectorAll(".test-block").forEach(e => e.style.filter = 'invert(2)');
+	document.querySelectorAll(".test-block h2").forEach(e => e.style.filter = 'invert(1)');
+	document.querySelectorAll(".test-block h4").forEach(e => e.style.filter = 'invert(1)');
+	document.querySelectorAll(".test-block-active-buttons").forEach(e => e.style.filter = 'invert(1)');
+
+}
