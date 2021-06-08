@@ -1,8 +1,10 @@
 let tests = [
     {
+      "testNameRus": "Кто ты из Genshin Impact?",
+      "testNameEng": "Who are you from Genshin Impact?",
       "blockName": "genshinTest",
+      "types": "games-category",
       "lineColor": "#5ec0e7",
-      "testName": "Кто ты из Genshin Impact",
       "questionNumber": "21",
       "backgroundImg": "img/genshinMain.png",
       "like": "genshinLike",
@@ -10,9 +12,11 @@ let tests = [
       "liked": localStorage.genshinLike
     },
     {
+      "testNameRus": "Кто ты из Замка Хаула?",
+      "testNameEng": "Who are you from Howl Castle?",
       "blockName": "zamonkHaulaTest",
+      "types": "anime-category",
       "lineColor": "#fa586f",
-      "testName": "Кто ты из Замка Хаула",
       "questionNumber": "?",
       "backgroundImg": "img/zamonkHaula.png",
       "like": "zamonkHaulaLike",
@@ -20,19 +24,23 @@ let tests = [
       "liked": localStorage.zamonkHaulaLike
     },
     {
+      "testNameRus": "Кто ты из Клинока рассекающего демонов?",
+      "testNameEng": "Who are you from the Demon Cleaver Blade?",
       "blockName": "klinokDemonovTest",
+      "types": "anime-category",
       "lineColor": "#714a7f",
-      "testName": "Кто ты из Клинока рассекающего демонов",
       "questionNumber": "?",
       "backgroundImg": "img/klinokDemonov.png",
-      "like": "klinokDemonov",
+      "like": "klinokDemonovLike",
       "passed": localStorage.klinokDemonovPassed,
       "liked": localStorage.klinokDemonovLike
     },
     {
+      "testNameRus": "Кто ты из 'Metal Family'?",
+      "testNameEng": "Who are you from 'Metal Family'?",
       "blockName": "metalfamilyTest",
+      "types": "sundry-category",
       "lineColor": "#f36630",
-      "testName": "Кто ты из 'Metal Family'",
       "questionNumber": "?",
       "backgroundImg": "img/metalfamily.png",
       "like": "metalfamilyLike",
@@ -40,9 +48,11 @@ let tests = [
       "liked": localStorage.metalfamilyLike
     },
     {
+      "testNameRus": "Кто ты из 'Overlord'?",
+      "testNameEng": "Who are you from 'Overlord'?",
       "blockName": "overlordTest",
+      "types": "anime-category",
       "lineColor": "#fa586f",
-      "testName": "Кто ты из 'Overlord'",
       "questionNumber": "?",
       "backgroundImg": "img/overlord.png",
       "like": "overlordLike",
@@ -50,9 +60,11 @@ let tests = [
       "liked": localStorage.overlordLike
     },
     {
+      "testNameRus": "Какая твоя стихия?",
+      "testNameEng": "What is your element?",
       "blockName": "elementTest",
+      "types": "sundry-category",
       "lineColor": "#58fa99",
-      "testName": "Какая твоя стихия?",
       "questionNumber": "?",
       "backgroundImg": "img/element.png",
       "like": "elementLike",
@@ -60,9 +72,11 @@ let tests = [
       "liked": localStorage.elementLike
     },
     {
+      "testNameRus": "Ты демон или ангел?",
+      "testNameEng": "Are you a demon or an angel?",
       "blockName": "angelOrDemonTest",
+      "types": "sundry-category",
       "lineColor": "#5ec0e7",
-      "testName": "Ты демон или ангел?",
       "questionNumber": "?",
       "backgroundImg": "img/angelOrDemonTest.png",
       "like": "angelOrDemonTestLike",
@@ -70,9 +84,11 @@ let tests = [
       "liked": localStorage.angelOrDemonTestLike
     },
     {
+      "testNameRus": "Какой ты демон?",
+      "testNameEng": "What kind of demon are you?",
       "blockName": "demonTest",
+      "types": "sundry-category",
       "lineColor": "#714a7f",
-      "testName": "Какой ты демон?",
       "questionNumber": "?",
       "backgroundImg": "img/demon.png",
       "like": "demonLike",
@@ -80,9 +96,11 @@ let tests = [
       "liked": localStorage.demonLike
     },
     {
+      "testNameRus": "Какой ты ангел?",
+      "testNameEng": "What kind of angel are you?",
       "blockName": "angelTest",
+      "types": "sundry-category",
       "lineColor": "#fa586f",
-      "testName": "Какой ты ангел?",
       "questionNumber": "?",
       "backgroundImg": "img/angel.png",
       "like": "angelLike",
@@ -90,9 +108,11 @@ let tests = [
       "liked": localStorage.angelLike
     },
     {
+      "testNameRus": "Какой ты зелье?",
+      "testNameEng": "What kind of potion are you?",
       "blockName": "potionTest",
+      "types": "sundry-category",
       "lineColor": "#f36630",
-      "testName": "Какой ты зелье?",
       "questionNumber": "?",
       "backgroundImg": "img/potion.png",
       "like": "potionLike",
@@ -100,9 +120,11 @@ let tests = [
       "liked": localStorage.potionLike
     },
     {
+      "testNameRus": "Какая у тебя ханахаки?",
+      "testNameEng": "What is your hanahaki?",
       "blockName": "hanahakiTest", 
+      "types": "sundry-category",
       "lineColor": "#5ec0e7",
-      "testName": "Какая у тебя ханахаки?",
       "questionNumber": "?",
       "backgroundImg": "img/hanahaki.png",
       "like": "hanahakiLike",
@@ -110,9 +132,11 @@ let tests = [
       "liked": localStorage.hanahakiLike
     },
     {
+      "testNameRus": "Какое ты пиво?",
+      "testNameEng": "What kind of beer are you?",
       "blockName": "beerTest",
+      "types": "sundry-category",
       "lineColor": "#58fa99",
-      "testName": "Какое ты пиво?",
       "questionNumber": "?",
       "backgroundImg": "img/beer.png",
       "like": "beerLike",
@@ -120,9 +144,11 @@ let tests = [
       "liked": localStorage.beerLike
     },
     {
+      "testNameRus": "Какой ты чай?",
+      "testNameEng": "What kind of tea are you?",
       "blockName": "teaTest",
+      "types": "sundry-category",
       "lineColor": "#fa586f",
-      "testName": "Какой ты чай?",
       "questionNumber": "?",
       "backgroundImg": "img/tea.png",
       "like": "teaLike",
@@ -130,7 +156,10 @@ let tests = [
       "liked": localStorage.teaLike
     },
     {
+      "testNameRus": "Какой ты дождь?",
+      "testNameEng": "What kind of rain are you?",
       "blockName": "rainTest",
+      "types": "sundry-category",
       "lineColor": "#5ec0e7",
       "testName": "Какой ты дождь?",
       "questionNumber": "?",
@@ -140,9 +169,11 @@ let tests = [
       "liked": localStorage.rainLike
     },
     {
+      "testNameRus": "Какой ты хлеб?",
+      "testNameEng": "What kind of bread are you?",
       "blockName": "breadTest",
+      "types": "sundry-category",
       "lineColor": "#f36630",
-      "testName": "Какой ты хлеб?",
       "questionNumber": "?",
       "backgroundImg": "img/bread.png",
       "like": "breadLike",
@@ -150,9 +181,11 @@ let tests = [
       "liked": localStorage.breadLike
     },
     {
+      "testNameRus": "Какой ты гриб?",
+      "testNameEng": "What kind of mushroom are you?",
       "blockName": "mushroomTest",
+      "types": "sundry-category",
       "lineColor": "#714a7f",
-      "testName": "Какой ты гриб?",
       "questionNumber": "?",
       "backgroundImg": "img/mushroomMain.png",
       "like": "mushroomLike",
@@ -160,9 +193,11 @@ let tests = [
       "liked": localStorage.mushroomLike
     },
     {
+      "testNameRus": "Какой ты мэм?",
+      "testNameEng": "What meme are you?",
       "blockName": "memTest",
+      "types": "sundry-category",
       "lineColor": "#5ec0e7",
-      "testName": "Какой ты мэм?",
       "questionNumber": "?",
       "backgroundImg": "img/mem.png",
       "like": "memLike",
@@ -170,9 +205,11 @@ let tests = [
       "liked": localStorage.memLike
     },
     {
+      "testNameRus": "На сколько ты испорчен?",
+      "testNameEng": "How spoiled are you?",
       "blockName": "spoiledTest",
+      "types": "sundry-category",
       "lineColor": "#f36630",
-      "testName": "На сколько ты испорчен?",
       "questionNumber": "?",
       "backgroundImg": "img/spoiled.png",
       "like": "spoiledLike",
@@ -180,9 +217,11 @@ let tests = [
       "liked": localStorage.spoiledLike
     },
     {
+      "testNameRus": "Какой ты овощ?",
+      "testNameEng": "What kind of vegetable are you?",
       "blockName": "vegetableTest",
+      "types": "sundry-category",
       "lineColor": "#714a7f",
-      "testName": "Какой ты овощ?",
       "questionNumber": "?",
       "backgroundImg": "img/vegetable.png",
       "like": "vegetableLike",
@@ -190,9 +229,11 @@ let tests = [
       "liked": localStorage.vegetableLike
     },
     {
+      "testNameRus": "Какая ты кружка?",
+      "testNameEng": "What a mug are you?",
       "blockName": "cupTest",
+      "types": "sundry-category",
       "lineColor": "#fa586f",
-      "testName": "Какая ты кружка?",
       "questionNumber": "?",
       "backgroundImg": "img/cup.png",
       "like": "cupLike",
@@ -200,9 +241,11 @@ let tests = [
       "liked": localStorage.cupLike
     },
     {
+      "testNameRus": "Are you a murderer or a victim?",
+      "testNameEng": "Ты убийца или жертва?",
       "blockName": "murdererOrVictimTest", 
+      "types": "sundry-category",
       "lineColor": "#58fa99",
-      "testName": "Ты убийца или жертва?",
       "questionNumber": "?",
       "backgroundImg": "img/murdererOrVictim.png",
       "like": "murdererOrVictimLike",
@@ -216,10 +259,10 @@ function testsjson(data){
      let testsGeneration = document.getElementById('main');
      for(var i = 0; i < data.length; i++){
         let testRow = `		
-        <div class="test-block" id="${data[i].blockName}" style="background: url(${data[i].backgroundImg}) no-repeat center; background-size: cover;">
+        <div part="${data[i].types}" class="test-block" id="${data[i].blockName}" style="background: url(${data[i].backgroundImg}) no-repeat center; background-size: cover;">
 			<div class="line" style="background: ${data[i].lineColor};"></div>
-			<h2>${data[i].testName}</h2>
-			<h4>Questions: <b class="questions-num-color">${data[i].questionNumber}</b></h4>
+			<h2>${data[i].testNameRus}</h2>
+			<h4>Вопросов: <b class="questions-num-color">${data[i].questionNumber}</b></h4>
 			<div class="test-block-active-buttons">
 				<p class="play" title="${data[i].passed}" part="${data[i].lineColor}">▶</p>
 				<div class="like" id="${data[i].like}" title="${data[i].liked}"></div>
@@ -227,19 +270,92 @@ function testsjson(data){
 		</div>`
   
         testsGeneration.innerHTML += testRow; 
-      	
      }};
 
 
+
+
+	let likedTests = document.getElementById('liked-tests');
+	let completedTests = document.getElementById('completed-tests');
+	let allTests = document.getElementById('all-tests');
+	let testBlocks = [].slice.call(document.getElementsByClassName('test-block'));
 	let playCollection = [].slice.call(document.getElementsByClassName('play'));
 	let likeCollection = [].slice.call(document.getElementsByClassName('like'));
+
+	let categoriesList = [].slice.call(document.getElementsByClassName('categories-list-li'));
+	let animeCategory = document.getElementById('anime-category');
+	let horoscopeCategory = document.getElementById('horoscope-category');
+	let gamesCategory = document.getElementById('games-category');
+	let differentCategory = document.getElementById('different-category');
+	let allCategory = document.getElementById('all-category');
 
 likeCollection.forEach((e)=>{if(e.title == 1){
 	e.classList.toggle("like-active");
 }
 });
 
+likedTests.addEventListener('click', ()=>{
+	allTests.classList.remove("current-burger-button");	
+	completedTests.classList.remove("current-burger-button");
+
+	likedTests.classList.add("current-burger-button");	
+	likeCollection.forEach((e)=>{if(e.classList.contains("like-active")){
+	e.parentElement.parentElement.style.display = 'flex';
+		}else{
+	e.parentElement.parentElement.style.display = 'none';
+		}
+	});
+})
+
+completedTests.addEventListener('click', ()=>{
+	likedTests.classList.remove("current-burger-button");
+	allTests.classList.remove("current-burger-button");
+
+	completedTests.classList.add("current-burger-button");	
+	playCollection.forEach((e)=>{if(e.title == 1){
+	e.parentElement.parentElement.style.display = 'flex';
+		}else{
+	e.parentElement.parentElement.style.display = 'none';
+		}
+	});
+})
+
+allTests.addEventListener('click', ()=>{
+	likedTests.classList.remove("current-burger-button");
+	completedTests.classList.remove ("current-burger-button");
+
+	allTests.classList.add("current-burger-button");	
+	playCollection.forEach(e => e.parentElement.parentElement.style.display = 'flex');
+});
+
 playCollection.forEach((e)=>{if(e.title == 1){
 	e.style.color = e.part;
 }
 });
+
+likeCollection.forEach(e => e.addEventListener('click', ()=>{
+	e.classList.toggle('like-active');
+	if(localStorage[e.id] == 0){
+		localStorage[e.id] = 1;
+	}else{
+		localStorage[e.id] = 0;
+	}
+}));
+
+categoryActiveId="all-category";
+categoriesList.forEach(e => e.addEventListener('click', ()=>{
+	categoriesList.forEach(e => e.classList.remove("categories-list-li-active"));
+	e.classList.add("categories-list-li-active");
+	categoryActiveId = e.id;
+	testBlocks.forEach((element) => {
+		if (element.part != categoryActiveId) {
+			if (categoryActiveId != 'all-category'){
+				element.style.display = 'none';
+			}else{
+				element.style.display = 'flex';
+			}
+		}else{
+			element.style.display = 'flex';
+		}
+	});
+}));

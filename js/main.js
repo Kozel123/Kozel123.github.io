@@ -4,8 +4,15 @@ let settingsButton = document.getElementById('settings-button');
 let homeBurger = document.getElementById('test-burger');
 let aboutBurger = document.getElementById('about-burger');
 let settingsBurger = document.getElementById('settings-burger');
+	let lenguageButton = document.getElementById('lenguage-button');
+	let modeButton = document.getElementById('mode-button');
+	let accontSign = document.getElementById('accont-sign');
+let modeColor = document.getElementById('modeColor');
+let lenguageColor = document.getElementById('lenguage-color');
+
 let like = [].slice.call(document.getElementsByClassName('like'));
-let burgerP = [].slice.call(document.getElementsByClassName('burger-p'));
+let burgerPSetting = [].slice.call(document.getElementsByClassName('burger-p-settings'));
+let burgerPTests = [].slice.call(document.getElementsByClassName('burger-p-tests'));
 
 	//<LocalStore>
 		//<GenshinTest>
@@ -197,26 +204,33 @@ let burgerP = [].slice.call(document.getElementsByClassName('burger-p'));
 		if(murdererOrVictimPassed == null){ murdererOrVictimPassed = 0;};
 		localStorage.setItem("murdererOrVictimPassed", murdererOrVictimPassed);
 	//</LocalStore>
+
+
 function buttonsHome() {
   	if(homeBurger.classList.contains("active-burger")){
-		burgerP.forEach(e => e.classList.toggle("burger-p-active"));
-		let burgersInterval = setInterval(() => {
+		burgerPTests.forEach(e => e.classList.toggle("burger-p-active"));
+		let burgersIntervalT = setInterval(() => {
 			if(!homeBurger.classList.contains("active-burger")){
-				burgerP.forEach(e => e.classList.toggle("burger-p-active"));
-				clearInterval(burgersInterval);
+				burgerPTests.forEach(e => e.classList.remove("burger-p-active"));
+				clearInterval(burgersIntervalT);
 			}
-		}, 400);
+		}, 30);
 	}
 }
 function buttonsSettings() {
+	
   	if(settingsBurger.classList.contains("active-burger")){
-		burgerP.forEach(e => e.classList.toggle("burger-p-active"));
-		let burgersInterval = setInterval(() => {
+		burgerPSetting.forEach(e => e.classList.add("burger-p-active"));
+		let burgersIntervalS = setInterval(() => {
 			if(!settingsBurger.classList.contains("active-burger")){
-				burgerP.forEach(e => e.classList.toggle("burger-p-active"));
-				clearInterval(burgersInterval);
+				burgerPSetting.forEach(e => e.classList.remove("burger-p-active"));
+				lenguageButton.style.background = 'none';
+				modeButton.style.background = 'none';	
+				accontSign.style.background = 'none';	
+				modeColor.style.color = '#68b4d0';
+				clearInterval(burgersIntervalS);
 			}
-		}, 400);
+		}, 30);
 	}
 }
 
@@ -242,11 +256,48 @@ settingsButton.addEventListener('click', ()=>{
 	settingsButton.classList.toggle("active-button");
 	buttonsSettings();
 
+
 	homeButton.classList.remove("active-button");
 	homeBurger.classList.remove("active-burger");
 	aboutButton.classList.remove("active-button");
 })
-like[0].addEventListener('click', ()=>{
-	like[0].classList.toggle("like-active");
-})
+
+/*like.forEach(e => e.addEventListener('click', ()=>{
+	console.log(JSON.parse("localStorage."+ e.id));
+}));*/
+
+lenguageButton.addEventListener('click', function(click){
+	click.stopPropagation();
+	lenguageButton.classList.toggle('lenguage-button-opend-closed');
+	lenguageColor.classList.toggle('l-color');
+
+	lenguageButton.children[1].classList.toggle('lenguegesOpend');
+	lenguageButton.style.background = '#5ec0e7bf';	
+	accontSign.style.background = 'none';
+	modeButton.style.background = 'none';	
+	modeColor.style.color = '#68b4d0';	
+});
+modeButton.addEventListener('click', function(click){
+	click.stopPropagation();
+	modeButton.style.background = '#5ec0e7bf';	
+	modeColor.style.color = '#f4fcff';	
+
+	lenguageButton.children[1].classList.remove('lenguegesOpend');
+	lenguageButton.classList.remove('lenguage-button-opend-closed');
+	lenguageColor.classList.remove('l-color');
+	lenguageButton.style.background = 'none';
+	accontSign.style.background = 'none';	
+});
+accontSign.addEventListener('click', function(click){
+	click.stopPropagation();
+	accontSign.style.background = '#5ec0e7bf';	
+
+	lenguageButton.children[1].classList.remove('lenguegesOpend');
+	lenguageButton.classList.remove('lenguage-button-opend-closed');
+	lenguageColor.classList.remove('l-color');
+	lenguageButton.style.background = 'none';
+	modeButton.style.background = 'none';	
+	modeColor.style.color = '#68b4d0';	
+});
+//https://www.youtube.com/watch?v=qZXt1Aom3Cs
 

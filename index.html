@@ -12,22 +12,40 @@
 		<div class="account-info"></div>
 	</header>
 	<main id="main">
+		<div class="categories">
+			<ul class="categories-list">
+				<b>Категории:</b>
+				<li class="categories-list-li" id="anime-category">Аниме</li>
+				<li class="categories-list-li" id="horoscope-category">Гороскоп</li>
+				<li class="categories-list-li" id="games-category">Игры</li>
+				<li class="categories-list-li" id="sundry-category">Разное</li>
+				<li class="categories-list-li categories-list-li-active" id="all-category">Все</li>
+			</ul>
+		</div>
 	</main>
 	<footer>
 		<ul>
 			<li id="test-button"><p>Test's</p>
 				<div class="test burger" id="test-burger">
-					<p class="burger-p">Liked</p>
-					<p class="burger-p">Completed</p>
-					<p class="burger-p">All</p>
+					<p class="burger-p-tests" id="liked-tests">Liked</p>
+					<p class="burger-p-tests" id="completed-tests">Completed</p>
+					<p class="burger-p-tests current-burger-button" id="all-tests">All</p>
 				</div>
 			</li>
 			<li id="about-button"><p>About</p><div class="about burger" id="about-burger"></div></li>
 			<li id="settings-button"><p>Settings</p>
 				<div class="settings burger" id="settings-burger">
-					<p class="burger-p">Languages</p>
-					<p class="burger-p">Mode: <b id="modeColor">Standart</b></p>
-					<p class="burger-p">Account</p>		
+					<div class="burger-p-settings" id="lenguage-button">
+						<p id="lenguage-color">Languages</p> 
+						<div class="lenguegesClosed">
+							<p>Русский</p>
+							<p>English</p>
+						</div>
+					</div>
+					<div class="burger-p-settings" id="mode-button">
+						<p>Mode: </p><b id="modeColor">Standart</b>
+					</div>
+					<div class="burger-p-settings" id="accont-sign">Account</div>		
 				</div>
 			</li>
 		</ul>
