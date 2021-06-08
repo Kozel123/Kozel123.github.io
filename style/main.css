@@ -55,7 +55,7 @@ main{
     align-content: flex-start;
 }
 .categories{
-	width: 95%;
+	width: 95vw;
     height: 6%;
     display: flex;
     align-items: center;
