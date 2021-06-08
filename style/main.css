@@ -55,6 +55,8 @@ main{
     align-content: flex-start;
 }
 .categories{
+	font-size: 3.4vw;
+	margin-top: 2px;
 	width: 95vw;
     height: 6%;
     display: flex;
@@ -263,18 +265,20 @@ footer ul li:after{
 }
 .lenguegesClosed{
 	display: none;
+    width: 0%;
 }
 .lenguegesOpend{
 	display: flex;
-	position: relative;
-	flex-wrap: nowrap;
-    top: 1.1vw;
-    height: 60%;
-    width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     word-break: break-all;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: absolute;
+    flex-wrap: nowrap;
+    height: 33%;
+    right: 28.8vw;
+    width: 200%;
+    background: #d8d7d7d6;
 }
 .lenguage-button-opend-closed{
 	height: 110vw;

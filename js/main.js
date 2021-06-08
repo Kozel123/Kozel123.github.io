@@ -242,6 +242,8 @@ homeButton.addEventListener('click', ()=>{
 	settingsButton.classList.remove("active-button");
 	settingsBurger.classList.remove("active-burger");
 	aboutButton.classList.remove("active-button");
+	lenguageButton.children[1].classList.remove('lenguegesOpend');
+	lenguageColor.classList.remove('l-color');
 })
 aboutButton.addEventListener('click', ()=>{
 	aboutButton.classList.toggle("active-button");
@@ -250,6 +252,8 @@ aboutButton.addEventListener('click', ()=>{
 	homeBurger.classList.remove("active-burger");
 	settingsButton.classList.remove("active-button");
 	settingsBurger.classList.remove("active-burger");
+	lenguageButton.children[1].classList.remove('lenguegesOpend');
+	lenguageColor.classList.remove('l-color');
 })
 settingsButton.addEventListener('click', ()=>{
 	settingsBurger.classList.toggle("active-burger");
@@ -260,6 +264,8 @@ settingsButton.addEventListener('click', ()=>{
 	homeButton.classList.remove("active-button");
 	homeBurger.classList.remove("active-burger");
 	aboutButton.classList.remove("active-button");
+	lenguageButton.children[1].classList.remove('lenguegesOpend');
+	lenguageColor.classList.remove('l-color');
 })
 
 /*like.forEach(e => e.addEventListener('click', ()=>{
@@ -268,7 +274,7 @@ settingsButton.addEventListener('click', ()=>{
 
 lenguageButton.addEventListener('click', function(click){
 	click.stopPropagation();
-	lenguageButton.classList.toggle('lenguage-button-opend-closed');
+	//lenguageButton.classList.toggle('lenguage-button-opend-closed');
 	lenguageColor.classList.toggle('l-color');
 
 	lenguageButton.children[1].classList.toggle('lenguegesOpend');
@@ -283,7 +289,7 @@ modeButton.addEventListener('click', function(click){
 	modeColor.style.color = '#f4fcff';	
 
 	lenguageButton.children[1].classList.remove('lenguegesOpend');
-	lenguageButton.classList.remove('lenguage-button-opend-closed');
+	//lenguageButton.classList.remove('lenguage-button-opend-closed');
 	lenguageColor.classList.remove('l-color');
 	lenguageButton.style.background = 'none';
 	accontSign.style.background = 'none';	
@@ -293,7 +299,7 @@ accontSign.addEventListener('click', function(click){
 	accontSign.style.background = '#5ec0e7bf';	
 
 	lenguageButton.children[1].classList.remove('lenguegesOpend');
-	lenguageButton.classList.remove('lenguage-button-opend-closed');
+	//lenguageButton.classList.remove('lenguage-button-opend-closed');
 	lenguageColor.classList.remove('l-color');
 	lenguageButton.style.background = 'none';
 	modeButton.style.background = 'none';	
