@@ -296,8 +296,8 @@ footer ul li:after{
 	justify-content: flex-start;
 }
 .account-photo {
-	width: 10vw;
-    height: 10vw;
+	width: 18vh;
+    height: 18vh;
 	position: relative;
     left: 3vw;
 }
@@ -311,12 +311,14 @@ main{
 }
 .categories {
     margin-top: 8px;
-    height: 12%;
+    height: 20%;
     }
-
+.lenguegesOpend{
+	right: 24vw;l
+}
 .test-block {
 	width: 47%;
-    height: 70%;
+    height: 90%;
    }
 .test-block h4 {
     width: 34%;
@@ -327,9 +329,19 @@ main{
     position: relative;
     bottom: 2vw;
     }
-    footer {
+ footer {
     height: 20%;
  }
+footer ul {
+	justify-content: space-around;
+    font-size: 4.5vw;
+}
+footer ul li {
+    width: 25%;
+}
+.burger {
+    width: 24.1%;
+}
  .like{
 	transform: scale(0.7) rotate(-45deg);
     position: relative;
