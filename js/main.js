@@ -326,6 +326,7 @@ function darckMode(){
 	modeColor.textContent = 'Dark';
 
 	document.querySelector("html").style.filter = 'invert(1)';
+	document.querySelectorAll(".line").forEach(e => e.style.filter = 'invert(2)');
 	document.querySelectorAll(".test-block").forEach(e => e.style.filter = 'invert(2)');
 	document.querySelectorAll(".test-block h2").forEach(e => e.style.filter = 'invert(1)');
 	document.querySelectorAll(".test-block h4").forEach(e => e.style.filter = 'invert(1)');

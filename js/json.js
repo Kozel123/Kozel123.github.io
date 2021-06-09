@@ -241,8 +241,8 @@ let tests = [
       "liked": localStorage.cupLike
     },
     {
-      "testNameRus": "Are you a murderer or a victim?",
-      "testNameEng": "Ты убийца или жертва?",
+      "testNameRus": "Ты убийца или жертва?",
+      "testNameEng": "Are you a murderer or a victim?",
       "blockName": "murdererOrVictimTest", 
       "types": "sundry-category",
       "lineColor": "#58fa99",
